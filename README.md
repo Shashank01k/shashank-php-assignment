@@ -33,7 +33,9 @@
 1. Tables:
 
   users: Contains user information including email and remember_token.
+  
   users_tasks: Stores task details including assignment status and task status.
+  
   users_tasks_masters: Master table for task assignments.
 
 
@@ -45,27 +47,43 @@
 ## API Endpoints
 
   API URL Example : http://127.0.0.1:8000/api/v1/search
+  
   Endpoint: search
 
   # Seeder API Endpoint:
+  
   Endpoint: /user-seeder
+  
   Method: POST
+  
   Description: Populates the database with dummy user data.
   
   User Login API Endpoint:
+  
   Endpoint: /user-login
+  
   Method: POST
+  
   Description: Allows users to log in and retrieve authentication token for accessing other APIs.
+
   
   Task Management API Endpoints:
+  
   Endpoint: |create | view | update/1 | delete/1 | assign_task | unassign_task/6 | change_task_status/2.
+  
   Methods: POST, GET, PUT, DELETE
+  
   Description: Create, retrieve, update, and delete tasks. Assign and unassign users to tasks. Change task status.
+
   
   Filtering Data API Endpoint:
+  
   Endpoint: /search
+  
   Method: GET
+  
   Description: Retrieve filtered task data based on status, due date, or assigned user.
+  
 
 ## Conclusion
 
@@ -76,6 +94,7 @@
   For any questions, feedback, or support related to Project A, feel free to reach out to us:
   
   Email: 19167shashankpandey@gmail.com
+  
   GitHub Issues: https://github.com/Shashank01k/shashank-php-assignment/issues
 
   
