@@ -12,6 +12,9 @@
 1. **Install Laravel Sanctum:**:
    ```bash composer require laravel/sanctum
 
+<p dir="auto">Install Laravel Sanctum:</p>
+  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>composer require laravel/sanctum</pre></div>
+
 3. Publish the Sanctum configuration file:
   php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
