@@ -5,6 +5,35 @@
 
 ## Setup and Usage
 
+# Laravel Commands
+
+  To set up authentication using Laravel Sanctum, follow these steps:
+
+1. Install Laravel Sanctum:
+  composer require laravel/sanctum
+
+2. Publish the Sanctum configuration file:
+  php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+3. Create a custom authentication middleware:
+  php artisan make:middleware AuthenticateMiddleware
+
+4. Create a default authentication middleware (if needed):
+  php artisan make:middleware Authenticate
+
+5. Create a seeder for the users table:
+  php artisan make:seeder UsersTableSeeder
+
+6. Create a factory for generating fake user data:
+  php artisan make:factory CommentFactory --model=Users
+
+7. Seed the database with dummy user data:
+  php artisan db:seed
+
+
+These commands will help you set up Laravel Sanctum for API authentication and seed your database with dummy user data for testing purposes. Adjust the commands as necessary for your specific application needs.
+
+
 1. Seeder API for Dummy Data:
 
   To populate the database with dummy user data, utilize the Seeder API provided by the user-seeder endpoint.
