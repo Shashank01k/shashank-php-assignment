@@ -13,28 +13,28 @@
   <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>composer require laravel/sanctum</pre>
   </div>
 
-3. Publish the Sanctum configuration file:
+2. Publish the Sanctum configuration file:
  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"</pre>
   </div>
 
-5. Create a custom authentication middleware:
+3. Create a custom authentication middleware:
   <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre> php artisan make:middleware AuthenticateMiddleware</pre>
   </div>
 
-7. Create a default authentication middleware (if needed):
+4. Create a default authentication middleware (if needed):
  
  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre> php artisan make:middleware Authenticate</pre>
   </div>
 
-8. Create a seeder for the users table:
+5. Create a seeder for the users table:
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan make:seeder UsersTableSeeder</pre>
   </div>
 
-9. Create a factory for generating fake user data:
+6. Create a factory for generating fake user data:
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan make:factory CommentFactory --model=Users</pre>
   </div>
 
-11. Seed the database with dummy user data:
+7. Seed the database with dummy user data:
 <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan db:seed</pre>
   </div>
 
