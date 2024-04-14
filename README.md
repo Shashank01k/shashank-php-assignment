@@ -1,3 +1,66 @@
+
+##Project A - CRUD API Documentation
+
+Welcome to Project A! This CRUD API is designed to provide functionality for managing tasks and users within the system. Below is a comprehensive guide on how to use the API effectively.
+
+##Setup and Usage
+
+1.Seeder API for Dummy Data:
+
+To populate the database with dummy user data, utilize the Seeder API provided by the user-seeder endpoint.
+
+
+2.User Authentication:
+
+The API requires authentication using user email and remember_token as the password, retrieved from the users table in the database.
+Use the USER-LOGIN API endpoint for user login. Upon successful login, a token will be generated. This token must be included in the headers of subsequent API requests for access.
+
+
+3.Task Management:
+
+Tasks can be created, updated, deleted, assigned, and unassigned via the API.
+Multiple users can be assigned to a single task simultaneously.
+Task status can be changed using enums: Pending, In-Progress, or Completed.
+
+
+4.Filtering Data:
+
+Utilize the filtering-by parameter with options for status, due_date, or assigned_user to retrieve filtered data from the database.
+
+
+## Database Schema
+
+1.Tables:
+
+users: Contains user information including email and remember_token.
+users_tasks: Stores task details including assignment status and task status.
+users_tasks_masters: Master table for task assignments.
+
+
+2.Database Name:
+
+The database name is project_a_db.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
