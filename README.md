@@ -9,29 +9,34 @@
 
   To set up authentication using Laravel Sanctum, follow these steps:
 
-1. **Install Laravel Sanctum:**:
-   ```bash composer require laravel/sanctum
-
-<p dir="auto">Install Laravel Sanctum:</p>
-  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>composer require laravel/sanctum</pre></div>
+<p dir="auto">1. Install Laravel Sanctum:</p>
+  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>composer require laravel/sanctum</pre>
+  </div>
 
 3. Publish the Sanctum configuration file:
-  php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+ <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"</pre>
+  </div>
 
-4. Create a custom authentication middleware:
-  php artisan make:middleware AuthenticateMiddleware
+5. Create a custom authentication middleware:
+  <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre> php artisan make:middleware AuthenticateMiddleware</pre>
+  </div>
 
-5. Create a default authentication middleware (if needed):
-  php artisan make:middleware Authenticate
+7. Create a default authentication middleware (if needed):
+ 
+ <div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre> php artisan make:middleware Authenticate</pre>
+  </div>
 
-6. Create a seeder for the users table:
-  php artisan make:seeder UsersTableSeeder
+8. Create a seeder for the users table:
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan make:seeder UsersTableSeeder</pre>
+  </div>
 
-7. Create a factory for generating fake user data:
-  php artisan make:factory CommentFactory --model=Users
+9. Create a factory for generating fake user data:
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan make:factory CommentFactory --model=Users</pre>
+  </div>
 
-8. Seed the database with dummy user data:
-  php artisan db:seed
+11. Seed the database with dummy user data:
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="gem install github-linguist"><pre>php artisan db:seed</pre>
+  </div>
 
 
 These commands will help you set up Laravel Sanctum for API authentication and seed your database with dummy user data for testing purposes. Adjust the commands as necessary for your specific application needs.
