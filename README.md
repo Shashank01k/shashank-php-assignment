@@ -9,9 +9,8 @@
 
   To set up authentication using Laravel Sanctum, follow these steps:
 
-1. **Install Laravel Sanctum:**
-   ```bash
-  composer require laravel/sanctum
+1. **Install Laravel Sanctum:**:
+   ```bash composer require laravel/sanctum
 
 3. Publish the Sanctum configuration file:
   php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
